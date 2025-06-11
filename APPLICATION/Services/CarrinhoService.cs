@@ -3,7 +3,7 @@ using INFRA.Repository;
 
 namespace APPLICATION.Services;
 
-public class CarrinhoService
+public class CarrinhoService : ICarrinhoService
 {
     private readonly IUnitOfWork _uow;
 

@@ -13,3 +13,4 @@
 /home/matheuscastelo/Área de Trabalho/refatoracao/APPLICATION/obj/Debug/net8.0/refint/APPLICATION.dll
 /home/matheuscastelo/Área de Trabalho/refatoracao/APPLICATION/obj/Debug/net8.0/APPLICATION.pdb
 /home/matheuscastelo/Área de Trabalho/refatoracao/APPLICATION/obj/Debug/net8.0/ref/APPLICATION.dll
+/home/matheuscastelo/Área de Trabalho/refatoracao/APPLICATION/obj/Debug/net8.0/APPLICATION.sourcelink.json

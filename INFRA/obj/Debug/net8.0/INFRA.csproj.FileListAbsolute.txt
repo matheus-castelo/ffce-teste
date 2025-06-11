@@ -12,3 +12,4 @@
 /home/matheuscastelo/Área de Trabalho/refatoracao/INFRA/obj/Debug/net8.0/INFRA.pdb
 /home/matheuscastelo/Área de Trabalho/refatoracao/INFRA/obj/Debug/net8.0/INFRA.genruntimeconfig.cache
 /home/matheuscastelo/Área de Trabalho/refatoracao/INFRA/obj/Debug/net8.0/ref/INFRA.dll
+/home/matheuscastelo/Área de Trabalho/refatoracao/INFRA/obj/Debug/net8.0/INFRA.sourcelink.json

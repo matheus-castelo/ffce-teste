@@ -1,3 +1,6 @@
+using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 using INFRA.Data;
 using Microsoft.EntityFrameworkCore;
 
@@ -10,8 +13,8 @@ namespace INFRA.Repository
 
         public GenericRepository(AppDbContext context)
         {
-            _context = context;
-            _dbSet = context.Set<T>();
+            _context = context ?? throw new ArgumentNullException(nameof(context));
+            _dbSet = _context.Set<T>();
         }
 
         public async Task<T> GetByIdAsync(int id)
@@ -26,17 +29,22 @@ namespace INFRA.Repository
 
         public async Task AddAsync(T entity)
         {
+            if (entity == null) throw new ArgumentNullException(nameof(entity));
             await _dbSet.AddAsync(entity);
         }
 
-        public void Update(T entity)
+        public Task UpdateAsync(T entity)
         {
+            if (entity == null) throw new ArgumentNullException(nameof(entity));
             _dbSet.Update(entity);
+            return Task.CompletedTask;
         }
 
-        public void Delete(T entity)
+        public Task DeleteAsync(T entity)
         {
+            if (entity == null) throw new ArgumentNullException(nameof(entity));
             _dbSet.Remove(entity);
+            return Task.CompletedTask;
         }
     }
 }

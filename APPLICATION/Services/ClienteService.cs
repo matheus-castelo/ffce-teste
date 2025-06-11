@@ -4,7 +4,7 @@ using INFRA.Repository;
 
 namespace APPLICATION.Services;
 
-public class ClienteService
+public class ClienteService : IClienteService
 {
     private readonly IUnitOfWork _uow;
 

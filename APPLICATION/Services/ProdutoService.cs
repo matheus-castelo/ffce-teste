@@ -3,7 +3,7 @@ using INFRA.Repository;
 
 namespace APPLICATION.Services;
 
-public class ProdutoService
+public class ProdutoService : IProdutoService
 {
     private readonly IUnitOfWork _uow;
 
